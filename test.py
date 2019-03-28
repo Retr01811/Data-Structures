@@ -67,7 +67,7 @@ def odd(pos):
         odd(pos.left)        
         odd(pos.right)
 def swap(root):
-    if (root.right!=None and root.left!=None):
+    if root:
         swap(root.right)
         swap(root.left)
         (root.left,root.right)=(root.right,root.left)   
